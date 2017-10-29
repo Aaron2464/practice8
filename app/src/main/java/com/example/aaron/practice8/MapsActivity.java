@@ -1,6 +1,7 @@
 package com.example.aaron.practice8;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
@@ -140,6 +141,7 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
     }
 
 
+    @SuppressLint("MissingPermission")
     private void setupMyLocation() {
         //noinspection MissingPermission
         mMap.setMyLocationEnabled(true);
@@ -164,6 +166,7 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
 
     }
 
+    @SuppressLint("MissingPermission")
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         //noinspection MissingPermission
