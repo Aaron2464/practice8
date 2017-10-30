@@ -118,10 +118,11 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
         if (locMgr.isProviderEnabled(LocationManager.GPS_PROVIDER) || locMgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 locMgr.requestLocationUpdates(bestProv, 1000, 1, (android.location.LocationListener) this);
-            } else {
-                Toast.makeText(this, "請開啟定位服務", Toast.LENGTH_LONG).show();
             }
         }
+        else{
+                Toast.makeText(this, "請開啟定位服務", Toast.LENGTH_LONG).show();
+            }
     }
 
     @Override
