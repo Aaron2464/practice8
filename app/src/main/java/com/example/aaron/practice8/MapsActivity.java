@@ -17,10 +17,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.Api;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
@@ -31,9 +28,6 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
-import java.util.concurrent.TimeUnit;
 
 public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLocationButtonClickListener,GoogleMap.OnMapClickListener,OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
@@ -117,27 +111,23 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
         mGoogleApiClient.disconnect();
         super.onStop();
     }
+
     @Override
     protected void onResume() {
         super.onResume();
-        if (locMgr.isProviderEnabled(LocationManager.GPS_PROVIDER) || locMgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER)){
-            if (ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-                locMgr.requestLocationUpdates(bestProv,1000,1, (android.location.LocationListener) this);
-            }
-            else{
-                Toast.makeText(this,"請開啟定位服務",Toast.LENGTH_LONG).show();
+        if (locMgr.isProviderEnabled(LocationManager.GPS_PROVIDER) || locMgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                locMgr.requestLocationUpdates(bestProv, 1000, 1, (android.location.LocationListener) this);
+            } else {
+                Toast.makeText(this, "請開啟定位服務", Toast.LENGTH_LONG).show();
             }
         }
     }
-    // onResume和onPause的程式架構旭要釐清
-    //程式執行有問題，先開啟定位會無法執行APP
-    // 轉為背景執行會無法重新執行
+
     @Override
     protected void onPause() {
         super.onPause();
-        if (ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            locMgr.removeUpdates((android.location.LocationListener) this);
-        }
+        LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
     }
 
 
