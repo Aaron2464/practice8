@@ -117,7 +117,7 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
         super.onResume();
         if (locMgr.isProviderEnabled(LocationManager.GPS_PROVIDER) || locMgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-                locMgr.requestLocationUpdates(bestProv, 1000, 1, (android.location.LocationListener) this);
+                //locMgr.requestLocationUpdates(bestProv, 1000, 1, (android.location.LocationListener) this);
             }
         }
         else{
