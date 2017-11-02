@@ -33,9 +33,9 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
     private static final int REQUEST_LOCATION = 2;
     private GoogleMap mMap;
-    LocationManager locMgr;
-    GoogleApiClient mGoogleApiClient;
-    LocationRequest locationRequest;
+    private LocationManager locMgr;
+    private GoogleApiClient mGoogleApiClient;
+    private LocationRequest locationRequest;
     String bestProv;
 
     @Override
