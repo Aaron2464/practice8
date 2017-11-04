@@ -2,11 +2,18 @@ package com.example.aaron.practice8;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -16,7 +23,12 @@ import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoLocation;
+import com.firebase.geofire.GeoQuery;
+import com.firebase.geofire.GeoQueryEventListener;
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
@@ -25,17 +37,36 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Random;
 
 
-public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLocationButtonClickListener,GoogleMap.OnMapClickListener,OnMapReadyCallback,
-        GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
+public class MapsActivity extends FragmentActivity implements
+                                                GoogleMap.OnMyLocationButtonClickListener,
+                                                GoogleMap.OnMapClickListener,
+                                                GoogleApiClient.ConnectionCallbacks,
+                                                GoogleApiClient.OnConnectionFailedListener,
+                                                OnMapReadyCallback,
+                                                LocationListener {
     private static final int REQUEST_LOCATION = 2;
     private GoogleMap mMap;
     private LocationManager locMgr;
     private GoogleApiClient mGoogleApiClient;
     private LocationRequest locationRequest;
+
+    private static int UPDATE_INTERVAL = 5000;
+    private static int FATEST_INTERVAL = 3000;
+    private static int DISPLACEMENT = 10;
+
+    DatabaseReference ref;
+    GeoFire geoFire;
+
     String bestProv;
 
     @Override
@@ -46,25 +77,33 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        if (mGoogleApiClient == null) {
+
+        ref = FirebaseDatabase.getInstance().getReference("MyLocation");
+        geoFire = new GeoFire(ref);
+
+        setupMyLocation();
+
+    }
+
+    private void buildGoogleApiClient() {
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this)
                     .addApi(LocationServices.API)
                     .build();
-
-        }
-        createLocationRequest();
+            mGoogleApiClient.connect();
         locMgr = (LocationManager)getSystemService(LOCATION_SERVICE);
         Criteria criteria = new Criteria();
         bestProv = locMgr.getBestProvider(criteria,true);
     }
 
+
     private void createLocationRequest() {
         locationRequest = new LocationRequest();
-        locationRequest.setInterval(5000);
-        locationRequest.setFastestInterval(2000);
+        locationRequest.setInterval(UPDATE_INTERVAL);
+        locationRequest.setFastestInterval(FATEST_INTERVAL);
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setSmallestDisplacement(DISPLACEMENT);
     }
 
     @Override
@@ -73,8 +112,9 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
         switch (requestCode){
             case REQUEST_LOCATION:
                 if (grantResults.length>0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    createLocationRequest();
                     //noinspection MissingPermission
-                    setupMyLocation();
+                    ButtonClicker();
                 }
                 else {
 
@@ -85,21 +125,98 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(
-                    this,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+
+        LatLng dangerous_area = new LatLng(25.2503,121.565);
+        mMap.addCircle(new CircleOptions()
+                .center(dangerous_area)
+                .radius(500)
+                .strokeColor(Color.BLUE)
+                .fillColor(0x220000FF)
+                .strokeWidth(5.0f)
+        );
+
+        GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(dangerous_area.latitude,dangerous_area.longitude),0.5f);
+        geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
+            @Override
+            public void onKeyEntered(String key, GeoLocation location) {
+                sendNotification("EDMTDEV",String.format("%s entered the danger area",key));
+            }
+
+            @Override
+            public void onKeyExited(String key) {
+                sendNotification("EDMTDEV",String.format("%s exited the danger area",key));
+
+            }
+
+            @Override
+            public void onKeyMoved(String key, GeoLocation location) {
+            Log.d("MOVE",String.format("%s moved within the dangerous area [%f/%f]",key,location.latitude,location.longitude));
+            }
+
+            @Override
+            public void onGeoQueryReady() {
+
+            }
+
+            @Override
+            public void onGeoQueryError(DatabaseError error) {
+            Log.e("Error",""+error);
+            }
+        });
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,new String[]{
+                            Manifest.permission.ACCESS_FINE_LOCATION,
+                            Manifest.permission.ACCESS_COARSE_LOCATION},
                     REQUEST_LOCATION);
         } else {
-            setupMyLocation();
+            ButtonClicker();
         }
         mMap.getUiSettings().setZoomControlsEnabled(true);
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         mMap.setOnMyLocationButtonClickListener(this);
 
     }
+
+    @SuppressLint("MissingPermission")
+    private void ButtonClicker() {
+        //noinspection MissingPermission
+        mMap.setMyLocationEnabled(true);
+        mMap.setOnMyLocationButtonClickListener(
+                new GoogleMap.OnMyLocationButtonClickListener(){
+
+                    @Override
+                    public boolean onMyLocationButtonClick() {
+                        LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+                        Criteria criteria = new Criteria();
+                        criteria.setAccuracy(Criteria.ACCURACY_FINE);
+                        String provider = locationManager.getBestProvider(criteria,true);
+                        @SuppressLint("MissingPermission")   //noinspection MissingPermission
+                                Location location = locationManager.getLastKnownLocation(provider);
+                        if (location != null) {
+                            Log.d("Location",location.getLatitude()+"/"+location.getLongitude());
+                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(),location.getLongitude()),15));
+                        }
+                        return false;
+                    }
+                });
+    }
+
+    private void sendNotification(String title, String content) {
+        Notification.Builder builder = new Notification.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher_round)
+                .setContentTitle(title)
+                .setContentText(content);
+        NotificationManager manager = (NotificationManager)this.getSystemService(Context.NOTIFICATION_SERVICE);
+        Intent intent = new Intent(this,MapsActivity.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_IMMUTABLE);
+        builder.setContentIntent(contentIntent);
+        Notification notification = builder.build();
+        notification.flags |= Notification.FLAG_AUTO_CANCEL;
+        notification.defaults |= Notification.DEFAULT_SOUND;
+
+        manager.notify(new Random().nextInt(),notification);
+    }
+
     @Override
     protected void onStart() {
         mGoogleApiClient.connect();
@@ -134,28 +251,57 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
 
     @SuppressLint("MissingPermission")
     private void setupMyLocation() {
-        //noinspection MissingPermission
-        mMap.setMyLocationEnabled(true);
-        mMap.setOnMyLocationButtonClickListener(
-                new GoogleMap.OnMyLocationButtonClickListener(){
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED )
+        {
+            ActivityCompat.requestPermissions(this,new String[]{
+                            Manifest.permission.ACCESS_COARSE_LOCATION,
+                            Manifest.permission.ACCESS_FINE_LOCATION}
+                    ,REQUEST_LOCATION);
+        }
+        else{
+            if(checkPlayServices())
+            {
+                buildGoogleApiClient();
+                createLocationRequest();
+                displayLocation();
+            }
+        }
+    }
 
-                    @Override
-                    public boolean onMyLocationButtonClick() {
-                        LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-                        Criteria criteria = new Criteria();
-                        criteria.setAccuracy(Criteria.ACCURACY_FINE);
-                        String provider = locationManager.getBestProvider(criteria,true);
-                        //noinspection MissingPermission
-                        Location location = locationManager.getLastKnownLocation(provider);
-                        if (location != null) {
-                            Log.d("Location",location.getLatitude()+"/"+location.getLongitude());
-                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(),location.getLongitude()),15));
-                        }
-                        return false;
-                    }
-                });
+    private void displayLocation() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+        {
+            return;
+        }
+        Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+        if(location != null)
+        {
+            final double latitude = location.getLatitude();
+            final double longitude = location.getLongitude();
+            Log.d("EDMTDEV",String.format("Your Location was changed: %f / %f",latitude,longitude));
+        }
+        else
+            Log.d("EDMTDEV","Can not get your location");
 
     }
+
+    private boolean checkPlayServices() {
+        int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
+        if(resultCode != ConnectionResult.SUCCESS)
+        {
+            if(GooglePlayServicesUtil.isUserRecoverableError(resultCode))
+                GooglePlayServicesUtil.getErrorDialog(resultCode,this,REQUEST_LOCATION).show();
+            else {
+                Toast.makeText(this,"不支援此裝置", Toast.LENGTH_LONG).show();
+                finish();
+            }
+            return false;
+        }
+        return true;
+    }
+
 
     @SuppressLint("MissingPermission")
     @Override
@@ -179,7 +325,7 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnMyLoca
 
     @Override
     public void onConnectionSuspended(int i) {
-
+        mGoogleApiClient.connect();
     }
 
     @Override
