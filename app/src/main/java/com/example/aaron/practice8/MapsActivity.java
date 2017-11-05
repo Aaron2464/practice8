@@ -39,6 +39,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -67,8 +68,9 @@ public class MapsActivity extends FragmentActivity implements
 
     DatabaseReference ref;
     GeoFire geoFire;
+    Marker mCurrent;
 
-    String bestProv;
+   String bestProv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +129,20 @@ public class MapsActivity extends FragmentActivity implements
         if (mlocation != null) {
             final double latitude = mlocation.getLatitude();
             final double longitude = mlocation.getLongitude();
+
+            geoFire.setLocation("You",new GeoLocation(latitude,longitude),
+                    new GeoFire.CompletionListener(){
+                        @Override
+                        public void onComplete(String key, DatabaseError error) {
+                            if (mCurrent != null) {
+                                mCurrent.remove();
+                                mCurrent = mMap.addMarker(new MarkerOptions()
+                                        .position(new LatLng(latitude, longitude))
+                                        .title("YOU"));
+                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 12.0f));
+                            }
+                        }
+                    });
             Log.d("EDMTDEV", String.format("Your Location was changed: %f / %f", latitude, longitude));
         } else {
             Log.d("EDMTDEV", "Can not get your location");
@@ -173,10 +189,10 @@ public class MapsActivity extends FragmentActivity implements
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng dangerous_area = new LatLng(25.2503, 121.565);
+        LatLng dangerous_area = new LatLng(24.168260, 120.695330);
         mMap.addCircle(new CircleOptions()
                 .center(dangerous_area)
-                .radius(500)
+                .radius(15)
                 .strokeColor(Color.BLUE)
                 .fillColor(0x220000FF)
                 .strokeWidth(5.0f)

@@ -59,11 +59,13 @@
       <file leaf-file-name="MapsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="722">
+              <caret line="200" column="123" lean-forward="false" selection-start-line="200" selection-start-column="123" selection-end-line="200" selection-end-column="123" />
               <folding>
-                <element signature="e#8840#9911#0" expanded="true" />
-                <element signature="e#9910#9911#0" expanded="true" />
+                <element signature="e#5357#6031#0" expanded="true" />
+                <element signature="e#6030#6031#0" expanded="true" />
+                <element signature="e#9686#10757#0" expanded="true" />
+                <element signature="e#10756#10757#0" expanded="true" />
                 <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
                 <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
                 <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2081,8 +2083,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509803053179" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509855311123" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2129,8 +2130,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509803053179" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509855311123" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2162,27 +2162,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -2312,8 +2291,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509803053182" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1509855311125" />
       </method>
     </configuration>
     <list size="1">
@@ -2365,7 +2343,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2384,18 +2361,18 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15565032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Assistant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30063966" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20895523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Assistant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30063966" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2445,31 +2422,31 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>81</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>82</line>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>84</line>
+          <line>86</line>
           <properties />
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>90</line>
+          <line>92</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>104</line>
+          <line>106</line>
           <properties class="com.example.aaron.practice8.MapsActivity" method="setupMyLocation">
             <option name="EMULATED" value="true" />
           </properties>
@@ -2477,15 +2454,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>120</line>
-          <properties class="com.example.aaron.practice8.MapsActivity" method="displayLocation">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>136</line>
+          <line>152</line>
           <properties class="com.example.aaron.practice8.MapsActivity" method="createLocationRequest">
             <option name="EMULATED" value="true" />
           </properties>
@@ -2493,7 +2462,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>244</line>
+          <line>260</line>
           <properties class="com.example.aaron.practice8.MapsActivity" method="sendNotification">
             <option name="EMULATED" value="true" />
           </properties>
@@ -2501,7 +2470,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>218</line>
+          <line>234</line>
           <properties class="com.example.aaron.practice8.MapsActivity" method="ButtonClicker">
             <option name="EMULATED" value="true" />
           </properties>
@@ -2509,7 +2478,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>314</line>
+          <line>330</line>
           <properties class="com.example.aaron.practice8.MapsActivity" method="onConnectionSuspended">
             <option name="EMULATED" value="true" />
           </properties>
@@ -2517,7 +2486,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>292</line>
+          <line>308</line>
           <properties class="com.example.aaron.practice8.MapsActivity" method="onLocationChanged">
             <option name="EMULATED" value="true" />
           </properties>
@@ -2525,14 +2494,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
-          <line>304</line>
+          <line>320</line>
           <properties class="com.example.aaron.practice8.MapsActivity" method="onConnected">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java</url>
+          <line>122</line>
+          <properties class="com.example.aaron.practice8.MapsActivity" method="displayLocation">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="89" />
+      <option name="time" value="90" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2542,8 +2519,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2561,8 +2540,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2580,8 +2561,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2599,8 +2582,10 @@
         <state relative-caret-position="2964">
           <caret line="188" column="5" lean-forward="false" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2618,8 +2603,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2637,8 +2624,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2656,8 +2645,10 @@
         <state relative-caret-position="2033">
           <caret line="139" column="5" lean-forward="false" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2675,8 +2666,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2694,8 +2687,10 @@
         <state relative-caret-position="2660">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2720,13 +2715,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
@@ -2754,13 +2749,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java">
@@ -2768,8 +2763,10 @@
         <state relative-caret-position="525">
           <caret line="160" column="37" lean-forward="false" selection-start-line="160" selection-start-column="37" selection-end-line="160" selection-end-column="37" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2811,8 +2808,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2830,8 +2829,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2849,8 +2850,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2868,8 +2871,10 @@
         <state relative-caret-position="2964">
           <caret line="188" column="5" lean-forward="false" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2887,8 +2892,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2906,8 +2913,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2925,8 +2934,10 @@
         <state relative-caret-position="2033">
           <caret line="139" column="5" lean-forward="false" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2944,8 +2955,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2963,8 +2976,10 @@
         <state relative-caret-position="2660">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
@@ -2989,13 +3004,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
@@ -3066,20 +3081,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="19">
+          <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -3098,7 +3105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="1106" column="0" lean-forward="false" selection-start-line="1106" selection-start-column="0" selection-end-line="1106" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3106,7 +3112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3114,7 +3119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="5416" column="0" lean-forward="false" selection-start-line="5416" selection-start-column="0" selection-end-line="5416" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3122,7 +3126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="406" column="25" lean-forward="false" selection-start-line="406" selection-start-column="25" selection-end-line="406" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3130,7 +3133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="615" column="0" lean-forward="false" selection-start-line="615" selection-start-column="0" selection-end-line="615" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3138,23 +3140,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/practice8-209fe-export.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/practice8-209fe-export.json" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="6289" column="53" lean-forward="true" selection-start-line="6289" selection-start-column="53" selection-end-line="6289" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3162,7 +3155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3170,17 +3162,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="722">
+          <caret line="200" column="123" lean-forward="false" selection-start-line="200" selection-start-column="123" selection-end-line="200" selection-end-column="123" />
           <folding>
-            <element signature="e#8840#9911#0" expanded="true" />
-            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#5357#6031#0" expanded="true" />
+            <element signature="e#6030#6031#0" expanded="true" />
+            <element signature="e#9686#10757#0" expanded="true" />
+            <element signature="e#10756#10757#0" expanded="true" />
             <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
