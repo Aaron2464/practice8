@@ -68,7 +68,6 @@ public class MapsActivity extends FragmentActivity implements
 
     DatabaseReference ref;
     GeoFire geoFire;
-    Marker mCurrent;
 
    String bestProv;
 
@@ -134,13 +133,9 @@ public class MapsActivity extends FragmentActivity implements
                     new GeoFire.CompletionListener(){
                         @Override
                         public void onComplete(String key, DatabaseError error) {
-                            if (mCurrent != null) {
-                                mCurrent.remove();
-                                mCurrent = mMap.addMarker(new MarkerOptions()
-                                        .position(new LatLng(latitude, longitude))
-                                        .title("YOU"));
-                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 12.0f));
-                            }
+
+                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 500));
+
                         }
                     });
             Log.d("EDMTDEV", String.format("Your Location was changed: %f / %f", latitude, longitude));
@@ -192,14 +187,15 @@ public class MapsActivity extends FragmentActivity implements
         LatLng dangerous_area = new LatLng(24.168260, 120.695330);
         mMap.addCircle(new CircleOptions()
                 .center(dangerous_area)
-                .radius(15)
+                .radius(40)
                 .strokeColor(Color.BLUE)
                 .fillColor(0x220000FF)
-                .strokeWidth(5.0f)
+                .strokeWidth(2.0f)
         );
 
-        GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(dangerous_area.latitude, dangerous_area.longitude), 0.5f);
+        GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(dangerous_area.latitude, dangerous_area.longitude), 0.04f);
         geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
+
             @Override
             public void onKeyEntered(String key, GeoLocation location) {
                 sendNotification("EDMTDEV", String.format("%s entered the danger area", key));
@@ -251,7 +247,7 @@ public class MapsActivity extends FragmentActivity implements
                                 Location location = locationManager.getLastKnownLocation(provider);
                         if (location != null) {
                             Log.d("Location",location.getLatitude()+"/"+location.getLongitude());
-                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(),location.getLongitude()),15));
+                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(),location.getLongitude()),500));
                         }
                         return false;
                     }
@@ -308,22 +304,25 @@ public class MapsActivity extends FragmentActivity implements
     @Override
     public void onLocationChanged(Location location) {
 
-        if (location != null){
-            Log.d("location",location.getLatitude()+","+location.getLongitude());
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(),location.getLongitude()),15));
-            displayLocation();
-        }
+        mlocation = location;
+        displayLocation();
+
     }
 
 
     @SuppressLint("MissingPermission")
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,locationRequest,this);
-        mlocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        if (mlocation != null){
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mlocation.getLatitude(),mlocation.getLongitude()),15));
+        displayLocation();
+        startLocationUpdate();
+    }
+
+    private void startLocationUpdate() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
         }
+        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,locationRequest,this);
     }
 
 
