@@ -134,7 +134,7 @@ public class MapsActivity extends FragmentActivity implements
                         @Override
                         public void onComplete(String key, DatabaseError error) {
 
-                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 500));
+                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 18));
 
                         }
                     });
@@ -247,7 +247,7 @@ public class MapsActivity extends FragmentActivity implements
                                 Location location = locationManager.getLastKnownLocation(provider);
                         if (location != null) {
                             Log.d("Location",location.getLatitude()+"/"+location.getLongitude());
-                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(),location.getLongitude()),500));
+                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(),location.getLongitude()),18));
                         }
                         return false;
                     }
