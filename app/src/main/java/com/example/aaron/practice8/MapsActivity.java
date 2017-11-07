@@ -14,6 +14,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
+import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -45,6 +46,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Locale;
 import java.util.Random;
 
 
@@ -54,7 +56,7 @@ public class MapsActivity extends FragmentActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         OnMapReadyCallback,
-        LocationListener {
+        LocationListener, TextToSpeech.OnInitListener {
     private static final int REQUEST_LOCATION = 2;
     private GoogleMap mMap;
     private LocationManager locMgr;
@@ -69,7 +71,8 @@ public class MapsActivity extends FragmentActivity implements
     DatabaseReference ref;
     GeoFire geoFire;
 
-   String bestProv;
+    String bestProv;
+    TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +85,7 @@ public class MapsActivity extends FragmentActivity implements
 
         ref = FirebaseDatabase.getInstance().getReference("MyLocation");
         geoFire = new GeoFire(ref);
-
+        textToSpeech = new TextToSpeech(this,this);
         setupMyLocation();
 
     }
@@ -199,12 +202,13 @@ public class MapsActivity extends FragmentActivity implements
             @Override
             public void onKeyEntered(String key, GeoLocation location) {
                 sendNotification("EDMTDEV", String.format("%s entered the danger area", key));
+                textToSpeech.speak("entered the danger area",TextToSpeech.QUEUE_FLUSH,null);
             }
 
             @Override
             public void onKeyExited(String key) {
                 sendNotification("EDMTDEV", String.format("%s exited the danger area", key));
-
+                textToSpeech.speak("exited the danger area",TextToSpeech.QUEUE_FLUSH,null);
             }
 
             @Override
@@ -292,7 +296,8 @@ public class MapsActivity extends FragmentActivity implements
         }
         else{
                 Toast.makeText(this, "請開啟定位服務", Toast.LENGTH_LONG).show();
-            }
+                textToSpeech.speak("please turn on the GPS",TextToSpeech.QUEUE_FLUSH,null);
+        }
     }
 
     @Override
@@ -344,5 +349,10 @@ public class MapsActivity extends FragmentActivity implements
     @Override
     public boolean onMyLocationButtonClick() {
         return false;
+    }
+
+    @Override
+    public void onInit(int status) {
+        textToSpeech.setLanguage(Locale.US);
     }
 }
