@@ -1,6 +1,5 @@
 package com.example.aaron.practice8;
 
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,7 +21,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.rengwuxian.materialedittext.MaterialEditText;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -190,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
                                         .addOnSuccessListener(new OnSuccessListener<Void>(){
                                             @Override
                                             public void onSuccess(Void aVoid){
-                                                Snackbar.make(rootLayout,"Regist success !!!",Snackbar.LENGTH_SHORT)
+                                                Snackbar.make(rootLayout,"Regist success fully!!!",Snackbar.LENGTH_SHORT)
                                                         .show();
                                             }
                                         })

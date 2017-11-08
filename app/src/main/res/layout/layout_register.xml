@@ -21,10 +21,10 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="15sp"
-
 
             app:met_baseColor="@color/colorPrimary"
             app:met_floatingLabel="highlight"
@@ -37,10 +37,10 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="15sp"
-
 
             app:met_baseColor="@color/colorPrimary"
             app:met_floatingLabel="highlight"
@@ -50,13 +50,13 @@
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/edtName"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:hint="Name"
             android:inputType="text"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="15sp"
-
 
             app:met_baseColor="@color/colorPrimary"
             app:met_floatingLabel="highlight"
@@ -66,14 +66,14 @@
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/edtPhone"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="phone"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
             android:inputType="phone"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="15sp"
-
-
+            
             app:met_baseColor="@color/colorPrimary"
             app:met_floatingLabel="highlight"
             app:met_primaryColor="@color/colorPrimary"

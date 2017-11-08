@@ -21,10 +21,10 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="20sp"
-
 
             app:met_baseColor="@color/colorPrimary"
             app:met_floatingLabel="highlight"
@@ -37,10 +37,10 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
+            android:text=""
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="20sp"
-
 
             app:met_baseColor="@color/colorPrimary"
             app:met_floatingLabel="highlight"
