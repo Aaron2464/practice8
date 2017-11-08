@@ -1,9 +1,5 @@
 package com.example.aaron.practice8.Model;
 
-/**
- * Created by Aaron on 8/11/2017.
- */
-
 public class User {
 
     private  String email,password,name,phone;

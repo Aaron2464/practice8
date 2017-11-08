@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
-                                startActivity(new Intent(MainActivity.this, welcome.class));
+                                startActivity(new Intent(MainActivity.this, MapsActivity.class));
                                 finish();
                             }
                         })

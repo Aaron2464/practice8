@@ -29,7 +29,6 @@
         android:orientation="horizontal"
         android:weightSum="2"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_margin="16dp"
@@ -39,23 +38,21 @@
         <Button
             android:id="@+id/btnSignIn"
             android:textColor="@android:color/white"
-            android:text="Sign in"
+            android:text="Sign In"
             android:background="@drawable/btn_sign_in_background"
             android:layout_marginRight="6dp"
             android:layout_width="0dp"
-            android:layout_margin="6dp"
             android:layout_weight="1"
             android:layout_height="wrap_content" />
 
 
         <Button
             android:id="@+id/btnRegister"
-            android:textColor="@android:color/white"
+            android:textColor="@color/btnRegister"
             android:text="REGISTER"
             android:background="@drawable/btn_register_background"
             android:layout_marginLeft="6dp"
             android:layout_width="0dp"
-            android:layout_margin="6dp"
             android:layout_weight="1"
             android:layout_height="wrap_content" />
 
