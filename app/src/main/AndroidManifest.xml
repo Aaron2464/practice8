@@ -25,9 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- suppress AndroidDomInspection -->
-        <service android:name=".GeofenceTransitionsIntentService" />
-
+        
         <activity android:name=".welcome"></activity>
     </application>
 
