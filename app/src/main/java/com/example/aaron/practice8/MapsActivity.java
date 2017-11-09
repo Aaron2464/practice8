@@ -36,8 +36,12 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -69,6 +73,7 @@ public class MapsActivity extends FragmentActivity implements
 
     String bestProv;
     TextToSpeech textToSpeech;
+    Marker mCurrent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,7 +137,12 @@ public class MapsActivity extends FragmentActivity implements
                     new GeoFire.CompletionListener(){
                         @Override
                         public void onComplete(String key, DatabaseError error) {
-
+                                /*if(mCurrent != null)
+                                                                  mCurrent.remove();
+                                                                 mCurrent = mMap.addMarker(new MarkerOptions()
+                                                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ball))
+                                                                .position(new LatLng(latitude,longitude))
+                                                                .title("YOU"));*/
                                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 18));
 
                         }
@@ -222,10 +232,9 @@ public class MapsActivity extends FragmentActivity implements
                 Log.e("Error", "" + error);
             }
         });
-        ButtonClicker();
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.setOnMyLocationButtonClickListener(this);
-
+        ButtonClicker();
     }
 
     private void ButtonClicker() {
@@ -243,7 +252,7 @@ public class MapsActivity extends FragmentActivity implements
                         Criteria criteria = new Criteria();
                         criteria.setAccuracy(Criteria.ACCURACY_FINE);
                         String provider = locationManager.getBestProvider(criteria,true);
-                        @SuppressLint("MissingPermission")   //noinspection MissingPermission
+                        @SuppressLint("MissingPermission")
                                 Location location = locationManager.getLastKnownLocation(provider);
                         if (location != null) {
                             Log.d("Location",location.getLatitude()+"/"+location.getLongitude());

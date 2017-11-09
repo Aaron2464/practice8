@@ -73,7 +73,7 @@
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary"
             android:textSize="15sp"
-            
+
             app:met_baseColor="@color/colorPrimary"
             app:met_floatingLabel="highlight"
             app:met_primaryColor="@color/colorPrimary"
