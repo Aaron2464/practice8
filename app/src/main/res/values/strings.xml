@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">practice8</string>
     <string name="title_activity_maps">Map</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
 </resources>

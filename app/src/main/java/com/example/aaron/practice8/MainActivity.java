@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 showRegisterDialog();
             }
         });
-
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
