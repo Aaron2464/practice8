@@ -36,12 +36,10 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -72,6 +70,7 @@ public class MapsActivity extends FragmentActivity implements
     GeoFire geoFire;
 
     String bestProv;
+    String userId;
     TextToSpeech textToSpeech;
     Marker mCurrent;
 
@@ -84,7 +83,8 @@ public class MapsActivity extends FragmentActivity implements
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        ref = FirebaseDatabase.getInstance().getReference("MyLocation");
+        userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        ref = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
         geoFire = new GeoFire(ref);
         textToSpeech = new TextToSpeech(this,this);
         setupMyLocation();
@@ -133,10 +133,10 @@ public class MapsActivity extends FragmentActivity implements
             final double latitude = mlocation.getLatitude();
             final double longitude = mlocation.getLongitude();
 
-            geoFire.setLocation("You",new GeoLocation(latitude,longitude),
-                    new GeoFire.CompletionListener(){
-                        @Override
-                        public void onComplete(String key, DatabaseError error) {
+                geoFire.setLocation("You", new GeoLocation(latitude, longitude),
+                        new GeoFire.CompletionListener() {
+                            @Override
+                            public void onComplete(String key, DatabaseError error) {
                                 /*if(mCurrent != null)
                                                                   mCurrent.remove();
                                                                  mCurrent = mMap.addMarker(new MarkerOptions()
@@ -145,11 +145,11 @@ public class MapsActivity extends FragmentActivity implements
                                                                 .title("YOU"));*/
                                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 18));
 
-                        }
-                    });
-            Log.d("EDMTDEV", String.format("Your Location was changed: %f / %f", latitude, longitude));
+                            }
+                        });
+                Log.d("EDMTDEV", String.format("Your Location was changed: %f / %f", latitude, longitude));
         } else {
-            Log.d("EDMTDEV", "Can not get your location");
+                Log.d("EDMTDEV", "Can not get your location");
         }
 
     }
