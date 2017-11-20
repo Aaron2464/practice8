@@ -5,10 +5,17 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java" line="183" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="507ec240-92d1-4b81-961a-f730daaa2d69" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -58,7 +65,20 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="practice8" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -67,11 +87,31 @@
       <file leaf-file-name="MapsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+            <state relative-caret-position="304">
+              <caret line="179" column="66" lean-forward="false" selection-start-line="179" selection-start-column="66" selection-end-line="179" selection-end-column="66" />
               <folding>
-                <element signature="e#5579#6482#0" expanded="true" />
-                <element signature="e#6481#6482#0" expanded="true" />
+                <element signature="e#4092#4221#0" expanded="true" />
+                <element signature="e#4220#4221#0" expanded="true" />
+                <element signature="e#6302#6642#0" expanded="true" />
+                <element signature="e#6641#6642#0" expanded="true" />
+                <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+                <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+                <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+                <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+                <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+                <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+                <element signature="e#12389#13425#0" expanded="true" />
+                <element signature="e#13424#13425#0" expanded="true" />
+                <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+                <element signature="e#15513#15547#0" expanded="false" />
+                <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+                <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -87,46 +127,56 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DynamiteModule.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/dynamite/DynamiteModule.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="180" column="75" lean-forward="false" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="75" />
+            <state relative-caret-position="3097">
+              <caret line="189" column="76" lean-forward="false" selection-start-line="189" selection-start-column="76" selection-end-line="189" selection-end-column="76" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1806#1957#0" expanded="true" />
-                <element signature="e#1956#1957#0" expanded="true" />
-                <element signature="e#2574#4421#0" expanded="true" />
-                <element signature="e#3653#3999#0" expanded="true" />
-                <element signature="e#3998#3999#0" expanded="true" />
-                <element signature="e#4047#4395#0" expanded="true" />
-                <element signature="e#4394#4395#0" expanded="true" />
-                <element signature="e#4420#4421#0" expanded="true" />
-                <element signature="e#5474#9238#0" expanded="true" />
-                <element signature="e#7127#8871#0" expanded="true" />
-                <element signature="e#7867#8305#0" expanded="true" />
-                <element signature="e#8304#8305#0" expanded="true" />
-                <element signature="e#8369#8812#0" expanded="true" />
-                <element signature="e#8811#8812#0" expanded="true" />
-                <element signature="e#8870#8871#0" expanded="true" />
-                <element signature="e#8911#9211#0" expanded="true" />
-                <element signature="e#9210#9211#0" expanded="true" />
-                <element signature="e#9237#9238#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1703#1704#0" expanded="false" />
+                <element signature="e#1755#1756#0" expanded="false" />
+                <element signature="e#1897#1898#0" expanded="false" />
+                <element signature="e#1946#1947#0" expanded="false" />
+                <element signature="e#4596#4597#0" expanded="false" />
+                <element signature="e#4644#4645#0" expanded="false" />
+                <element signature="e#9413#9414#0" expanded="false" />
+                <element signature="e#9461#9462#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <file leaf-file-name="activity_maps.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="665">
+              <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -134,11 +184,22 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ref</find>
       <find>geoFire</find>
       <find>latitude</find>
       <find>users</find>
       <find>user</find>
+      <find>radius</find>
+      <find>ref</find>
+      <find>userId</find>
+      <find>isUserFound</find>
+      <find>DatabaseReference</find>
+      <find>GeoFire</find>
+      <find>btnPickupRequest</find>
+      <find>UserID</find>
+      <find>You</find>
+      <find>location</find>
+      <find>&quot;location&quot;</find>
+      <find>findUser</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1880,10 +1941,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/common/internal/zzac.class" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/internal/zzbcp.class" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/internal/zzbcd.class" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/internal/zzbcx.class" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/internal/zzbbi.class" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/common/internal/zzaa.class" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/common/internal/zzn.class" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/common/internal/zzi.class" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/common/internal/zzh.class" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_register.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
+        <option value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/dynamite/DynamiteModule.class" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java" />
       </list>
     </option>
@@ -1909,37 +1982,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practice8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practice8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practice8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practice8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1960,6 +2002,68 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice8" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mipmap" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice8" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice8" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2016,13 +2120,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice8" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practice8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="device.picker.selection" value="HVGA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Uber_android_app_clone" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Rider" />
+    <property name="android.profiler.active" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2037,6 +2183,55 @@
     </option>
   </component>
   <component name="RunManager" selected="Android App.app">
+    <configuration default="false" name="MapsActivity" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="com.example.aaron.practice8.MapsActivity" />
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511185328273" />
+      </method>
+    </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -2107,7 +2302,55 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510475194816" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511185328273" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+      </Profilers>
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511185328273" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2122,6 +2365,89 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="practice8" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
       <method />
     </configuration>
@@ -2207,12 +2533,18 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510475194816" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511185328274" />
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android App.app" />
+      <item index="1" class="java.lang.String" itemvalue="Android App.MapsActivity" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Android App.MapsActivity" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -2248,42 +2580,50 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16364606" sideWeight="0.50743496" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3314732" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16364606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Assistant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13006397" sideWeight="0.49256507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Assistant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2291,18 +2631,94 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="40" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="mlocation" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="184" column="95" lean-forward="false" selection-start-line="184" selection-start-column="95" selection-end-line="184" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4092#4221#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+            <element signature="e#6302#6642#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+            <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+            <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+            <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#12389#13425#0" expanded="true" />
+            <element signature="e#13424#13425#0" expanded="true" />
+            <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#15513#15547#0" expanded="false" />
+            <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3420">
+          <caret line="180" column="75" lean-forward="false" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1976">
           <caret line="151" column="58" lean-forward="false" selection-start-line="151" selection-start-column="58" selection-end-line="151" selection-end-column="58" />
           <folding>
-            <element signature="e#5579#6482#0" expanded="true" />
-            <element signature="e#6481#6482#0" expanded="true" />
+            <element signature="e#4092#4221#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+            <element signature="e#6302#6642#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+            <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+            <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+            <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#12389#13425#0" expanded="true" />
+            <element signature="e#13424#13425#0" expanded="true" />
+            <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#15513#15547#0" expanded="false" />
+            <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2319,27 +2735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1806#1957#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2574#4421#0" expanded="true" />
-            <element signature="e#3653#3999#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4047#4395#0" expanded="true" />
-            <element signature="e#4394#4395#0" expanded="true" />
-            <element signature="e#4420#4421#0" expanded="true" />
-            <element signature="e#5474#9238#0" expanded="true" />
-            <element signature="e#7127#8871#0" expanded="true" />
-            <element signature="e#7867#8305#0" expanded="true" />
-            <element signature="e#8304#8305#0" expanded="true" />
-            <element signature="e#8369#8812#0" expanded="true" />
-            <element signature="e#8811#8812#0" expanded="true" />
-            <element signature="e#8870#8871#0" expanded="true" />
-            <element signature="e#8911#9211#0" expanded="true" />
-            <element signature="e#9210#9211#0" expanded="true" />
-            <element signature="e#9237#9238#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2348,8 +2743,28 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5579#6482#0" expanded="true" />
-            <element signature="e#6481#6482#0" expanded="true" />
+            <element signature="e#4092#4221#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+            <element signature="e#6302#6642#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+            <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+            <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+            <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#12389#13425#0" expanded="true" />
+            <element signature="e#13424#13425#0" expanded="true" />
+            <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#15513#15547#0" expanded="false" />
+            <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2374,8 +2789,28 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5579#6482#0" expanded="true" />
-            <element signature="e#6481#6482#0" expanded="true" />
+            <element signature="e#4092#4221#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+            <element signature="e#6302#6642#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+            <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+            <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+            <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#12389#13425#0" expanded="true" />
+            <element signature="e#13424#13425#0" expanded="true" />
+            <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#15513#15547#0" expanded="false" />
+            <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2400,8 +2835,28 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5579#6482#0" expanded="true" />
-            <element signature="e#6481#6482#0" expanded="true" />
+            <element signature="e#4092#4221#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+            <element signature="e#6302#6642#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+            <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+            <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+            <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#12389#13425#0" expanded="true" />
+            <element signature="e#13424#13425#0" expanded="true" />
+            <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#15513#15547#0" expanded="false" />
+            <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2426,8 +2881,28 @@
         <state relative-caret-position="1216">
           <caret line="111" column="37" lean-forward="false" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="37" />
           <folding>
-            <element signature="e#5579#6482#0" expanded="true" />
-            <element signature="e#6481#6482#0" expanded="true" />
+            <element signature="e#4092#4221#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+            <element signature="e#6302#6642#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+            <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+            <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+            <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#12389#13425#0" expanded="true" />
+            <element signature="e#13424#13425#0" expanded="true" />
+            <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#15513#15547#0" expanded="false" />
+            <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2452,8 +2927,28 @@
         <state relative-caret-position="1216">
           <caret line="111" column="37" lean-forward="false" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="37" />
           <folding>
-            <element signature="e#5579#6482#0" expanded="true" />
-            <element signature="e#6481#6482#0" expanded="true" />
+            <element signature="e#4092#4221#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+            <element signature="e#6302#6642#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+            <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+            <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+            <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#12389#13425#0" expanded="true" />
+            <element signature="e#13424#13425#0" expanded="true" />
+            <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#15513#15547#0" expanded="false" />
+            <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2487,43 +2982,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_register.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/common/internal/zzac.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="44" column="40" lean-forward="false" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+        </state>
       </provider>
-      <provider editor-type-id="text-editor">
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/internal/zzbcp.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="529" column="40" lean-forward="false" selection-start-line="529" selection-start-column="40" selection-end-line="529" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/internal/zzbcd.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="181" column="48" lean-forward="false" selection-start-line="181" selection-start-column="48" selection-end-line="181" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/internal/zzbcx.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="227" column="58" lean-forward="false" selection-start-line="227" selection-start-column="58" selection-end-line="227" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/internal/zzbbi.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="58" lean-forward="false" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/f89c3c752514bc7e9671cf8108b5752f/jars/classes.jar!/com/google/android/gms/common/internal/zzaa.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="58" lean-forward="false" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/common/internal/zzn.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/common/internal/zzi.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/common/internal/zzh.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/btn_sign_in_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/btn_register_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_register.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding>
+            <element signature="e#751#766#0" expanded="false" />
+            <element signature="e#1414#1432#0" expanded="false" />
+            <element signature="e#2072#2086#0" expanded="false" />
+            <element signature="e#2719#2734#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mainlayout.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_login.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -2531,31 +3115,75 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_login.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="180" column="75" lean-forward="false" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="75" />
+        <state relative-caret-position="3097">
+          <caret line="189" column="76" lean-forward="false" selection-start-line="189" selection-start-column="76" selection-end-line="189" selection-end-column="76" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1806#1957#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2574#4421#0" expanded="true" />
-            <element signature="e#3653#3999#0" expanded="true" />
-            <element signature="e#3998#3999#0" expanded="true" />
-            <element signature="e#4047#4395#0" expanded="true" />
-            <element signature="e#4394#4395#0" expanded="true" />
-            <element signature="e#4420#4421#0" expanded="true" />
-            <element signature="e#5474#9238#0" expanded="true" />
-            <element signature="e#7127#8871#0" expanded="true" />
-            <element signature="e#7867#8305#0" expanded="true" />
-            <element signature="e#8304#8305#0" expanded="true" />
-            <element signature="e#8369#8812#0" expanded="true" />
-            <element signature="e#8811#8812#0" expanded="true" />
-            <element signature="e#8870#8871#0" expanded="true" />
-            <element signature="e#8911#9211#0" expanded="true" />
-            <element signature="e#9210#9211#0" expanded="true" />
-            <element signature="e#9237#9238#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1703#1704#0" expanded="false" />
+            <element signature="e#1755#1756#0" expanded="false" />
+            <element signature="e#1897#1898#0" expanded="false" />
+            <element signature="e#1946#1947#0" expanded="false" />
+            <element signature="e#4596#4597#0" expanded="false" />
+            <element signature="e#4644#4645#0" expanded="false" />
+            <element signature="e#9413#9414#0" expanded="false" />
+            <element signature="e#9461#9462#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/0cdba69fb842823683ec900ff8d21484/jars/classes.jar!/com/google/android/gms/dynamite/DynamiteModule.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2567,13 +3195,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/aaron/practice8/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="304">
+          <caret line="179" column="66" lean-forward="false" selection-start-line="179" selection-start-column="66" selection-end-line="179" selection-end-column="66" />
           <folding>
-            <element signature="e#5579#6482#0" expanded="true" />
-            <element signature="e#6481#6482#0" expanded="true" />
+            <element signature="e#4092#4221#0" expanded="true" />
+            <element signature="e#4220#4221#0" expanded="true" />
+            <element signature="e#6302#6642#0" expanded="true" />
+            <element signature="e#6641#6642#0" expanded="true" />
+            <element signature="method#onCancelled#0;class#7532:8333" expanded="false" />
+            <element signature="method#onKeyExited#0;class#7233:8740" expanded="false" />
+            <element signature="method#onKeyMoved#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryReady#0;class#7233:8740" expanded="false" />
+            <element signature="method#onGeoQueryError#0;class#7233:8740" expanded="false" />
+            <element signature="method#createLocationRequest#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#buildGoogleApiClient#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#checkPlayServices#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#12389#13425#0" expanded="true" />
+            <element signature="e#13424#13425#0" expanded="true" />
+            <element signature="method#sendNotification#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MapsActivity#0" expanded="false" />
+            <element signature="e#15513#15547#0" expanded="false" />
+            <element signature="method#onConnected#0;class#MapsActivity#0" expanded="false" />
+            <element signature="method#startLocationUpdate#0;class#MapsActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
