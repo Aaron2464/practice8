@@ -94,7 +94,7 @@ public class MapsActivity extends FragmentActivity implements
         mapFragment.getMapAsync(this);
 
         userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        ref = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
+        ref = FirebaseDatabase.getInstance().getReference();
         geoFire = new GeoFire(ref);
         textToSpeech = new TextToSpeech(this,this);
 
@@ -152,7 +152,7 @@ public class MapsActivity extends FragmentActivity implements
             final double latitude = mlocation.getLatitude();
             final double longitude = mlocation.getLongitude();
 
-                geoFire.setLocation("location", new GeoLocation(latitude, longitude),
+                geoFire.setLocation(userId, new GeoLocation(latitude, longitude),
                         new GeoFire.CompletionListener() {
                             @Override
                             public void onComplete(String key, DatabaseError error) {
@@ -168,8 +168,8 @@ public class MapsActivity extends FragmentActivity implements
 
     }
     private void findUser() {
-       //DatabaseReference people = FirebaseDatabase.getInstance().getReference("Users");
-       //GeoFire gfpeople = new GeoFire(people);
+       DatabaseReference people = FirebaseDatabase.getInstance().getReference().child(userId);
+       GeoFire gfpeople = new GeoFire(people);
 
         GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(mlocation.getLatitude(),mlocation.getLongitude()),radius);
         geoQuery.removeAllListeners();
