@@ -2,16 +2,18 @@ package com.example.aaron.practice8.Model;
 
 public class User {
 
-    private  String email,password,name,phone;
+    private  String email,password,name,phone,uid;
     public User(){
 
     }
 
-    public User(String email, String password, String name, String phone){
+
+    public User(String email, String password, String name, String phone, String uid){
         this.email = email;
         this.password = password;
         this.name = name;
         this.phone = phone;
+        this.uid = uid;
     }
 
 
@@ -46,4 +48,13 @@ public class User {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
 }

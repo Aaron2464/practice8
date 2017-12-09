@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         final MaterialEditText edtEmail = login_layout.findViewById(R.id.edtEmail);
         final MaterialEditText edtPassword = login_layout.findViewById(R.id.edtPassword);
 
-
         dialog.setView(login_layout);
         dialog.setPositiveButton("Sign In", new DialogInterface.OnClickListener() {
             @Override
@@ -181,6 +180,7 @@ public class MainActivity extends AppCompatActivity {
                                 user.setName(edtName.getText().toString());
                                 user.setPhone(edtPhone.getText().toString());
                                 user.setPassword(edtPassword.getText().toString());
+                                user.setUid(FirebaseAuth.getInstance().getCurrentUser().getUid().toString());
 
                                 users.child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                         .setValue(user)
