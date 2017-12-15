@@ -2,18 +2,20 @@ package com.example.aaron.practice8.Model;
 
 public class User {
 
-    private  String email,password,name,phone,uid;
+    private  String email,password,name,phone,uid,lat,lng;
     public User(){
 
     }
 
 
-    public User(String email, String password, String name, String phone, String uid){
+    public User(String email, String password, String name, String phone, String uid, String lat, String lng){
         this.email = email;
         this.password = password;
         this.name = name;
         this.phone = phone;
         this.uid = uid;
+        this.lat = lat;
+        this.lng = lng;
     }
 
 
@@ -57,4 +59,19 @@ public class User {
         this.uid = uid;
     }
 
+    public String getLat() {
+        return lat;
+    }
+
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+
+    public String getLng() {
+        return lng;
+    }
+
+    public void setLng(String lng) {
+        this.lng = lng;
+    }
 }

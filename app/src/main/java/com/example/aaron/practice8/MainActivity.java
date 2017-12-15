@@ -22,9 +22,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
-    Button btnSignIn,btnRegister;
+    Button btnSignIn, btnRegister;
     RelativeLayout rootLayout;
 
     FirebaseAuth auth;
@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         db = FirebaseDatabase.getInstance();
         users = db.getReference("Users");
 
-        btnRegister = (Button)findViewById(R.id.btnRegister);
-        btnSignIn = (Button)findViewById(R.id.btnSignIn);
-        rootLayout = (RelativeLayout)findViewById(R.id.rootLayout);
+        btnRegister = (Button) findViewById(R.id.btnRegister);
+        btnSignIn = (Button) findViewById(R.id.btnSignIn);
+        rootLayout = (RelativeLayout) findViewById(R.id.rootLayout);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.setMessage("Please use email and password to Sign In");
 
         LayoutInflater inflater = LayoutInflater.from(this);
-        View login_layout = inflater.inflate(R.layout.layout_login,null);
+        View login_layout = inflater.inflate(R.layout.layout_login, null);
 
         final MaterialEditText edtEmail = login_layout.findViewById(R.id.edtEmail);
         final MaterialEditText edtPassword = login_layout.findViewById(R.id.edtPassword);
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                auth.signInWithEmailAndPassword(edtEmail.getText().toString(),edtPassword.getText().toString())
+                auth.signInWithEmailAndPassword(edtEmail.getText().toString(), edtPassword.getText().toString())
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Snackbar.make(rootLayout,"Failed " +e.getMessage(),Snackbar.LENGTH_SHORT)
+                                Snackbar.make(rootLayout, "Failed " + e.getMessage(), Snackbar.LENGTH_SHORT)
                                         .show();
                             }
                         });
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.setMessage("Please use email to register");
 
         LayoutInflater inflater = LayoutInflater.from(this);
-        View register_layout = inflater.inflate(R.layout.layout_register,null);
+        View register_layout = inflater.inflate(R.layout.layout_register, null);
 
         final MaterialEditText edtEmail = register_layout.findViewById(R.id.edtEmail);
         final MaterialEditText edtPassword = register_layout.findViewById(R.id.edtPassword);
@@ -136,42 +136,37 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
 
-                if (TextUtils.isEmpty(edtEmail.getText().toString()))
-                {
-                    Snackbar.make(rootLayout,"Please enter email address",Snackbar.LENGTH_SHORT)
+                if (TextUtils.isEmpty(edtEmail.getText().toString())) {
+                    Snackbar.make(rootLayout, "Please enter email address", Snackbar.LENGTH_SHORT)
                             .show();
                     return;
                 }
-                if (TextUtils.isEmpty(edtPassword.getText().toString()))
-                {
-                    Snackbar.make(rootLayout,"Please enter password",Snackbar.LENGTH_SHORT)
+                if (TextUtils.isEmpty(edtPassword.getText().toString())) {
+                    Snackbar.make(rootLayout, "Please enter password", Snackbar.LENGTH_SHORT)
                             .show();
                     return;
                 }
 
-                if (edtPassword.getText().toString().length() <6)
-                {
-                    Snackbar.make(rootLayout,"Passwod is too short !!",Snackbar.LENGTH_SHORT)
+                if (edtPassword.getText().toString().length() < 6) {
+                    Snackbar.make(rootLayout, "Passwod is too short !!", Snackbar.LENGTH_SHORT)
                             .show();
                     return;
                 }
 
 
-                if (TextUtils.isEmpty(edtName.getText().toString()))
-                {
-                    Snackbar.make(rootLayout,"Please enter name",Snackbar.LENGTH_SHORT)
+                if (TextUtils.isEmpty(edtName.getText().toString())) {
+                    Snackbar.make(rootLayout, "Please enter name", Snackbar.LENGTH_SHORT)
                             .show();
                     return;
                 }
 
-                if (TextUtils.isEmpty(edtPhone.getText().toString()))
-                {
-                    Snackbar.make(rootLayout,"Please enter phone number",Snackbar.LENGTH_SHORT)
+                if (TextUtils.isEmpty(edtPhone.getText().toString())) {
+                    Snackbar.make(rootLayout, "Please enter phone number", Snackbar.LENGTH_SHORT)
                             .show();
                     return;
                 }
 
-                auth.createUserWithEmailAndPassword(edtEmail.getText().toString(),edtPassword.getText().toString())
+                auth.createUserWithEmailAndPassword(edtEmail.getText().toString(), edtPassword.getText().toString())
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {

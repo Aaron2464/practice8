@@ -12,13 +12,15 @@ import android.graphics.Color;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +31,7 @@ import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
 import com.firebase.geofire.GeoQuery;
 import com.firebase.geofire.GeoQueryEventListener;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -42,7 +45,6 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -73,11 +75,11 @@ public class MapsActivity extends FragmentActivity implements
     private static int FATEST_INTERVAL = 3000;
     private static int DISPLACEMENT = 10;
 
-    DatabaseReference ref;
+    DatabaseReference ref, userref, useruid;
     GeoFire geoFire;
 
     String bestProv;
-    String userId;
+    String userId,Uid;
     TextToSpeech textToSpeech;
     Button btnPickupRequest;
 
@@ -95,6 +97,7 @@ public class MapsActivity extends FragmentActivity implements
 
         userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         ref = FirebaseDatabase.getInstance().getReference();
+        userref =  FirebaseDatabase.getInstance().getReference("Users").child(userId);
         geoFire = new GeoFire(ref);
         textToSpeech = new TextToSpeech(this,this);
 
@@ -151,51 +154,60 @@ public class MapsActivity extends FragmentActivity implements
         if (mlocation != null) {
             final double latitude = mlocation.getLatitude();
             final double longitude = mlocation.getLongitude();
+            userref.child("lat").setValue(latitude);
+            userref.child("lng").setValue(longitude);
+            geoFire.setLocation(userId, new GeoLocation(latitude, longitude),
+                    new GeoFire.CompletionListener() {
+                        @Override
+                        public void onComplete(String key, DatabaseError error) {
 
-                geoFire.setLocation(userId, new GeoLocation(latitude, longitude),
-                        new GeoFire.CompletionListener() {
-                            @Override
-                            public void onComplete(String key, DatabaseError error) {
+                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 18));
 
-                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 18));
-
-                            }
-                        });
-                Log.d("EDMTDEV", String.format("Your Location was changed: %f / %f", latitude, longitude));
+                        }
+                    });
+            Log.d("EDMTDEV", String.format("Your Location was changed: %f / %f", latitude, longitude));
         } else {
-                Log.d("EDMTDEV", "Can not get your location");
+            Log.d("EDMTDEV", "Can not get your location");
         }
 
     }
     private void findUser() {
-       DatabaseReference people = FirebaseDatabase.getInstance().getReference().child(userId);
-       GeoFire gfpeople = new GeoFire(people);
+        DatabaseReference people = FirebaseDatabase.getInstance().getReference();
+        GeoFire gfpeople = new GeoFire(people);
 
-        GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(mlocation.getLatitude(),mlocation.getLongitude()),radius);
+        GeoQuery geoQuery = gfpeople.queryAtLocation(new GeoLocation(mlocation.getLatitude(), mlocation.getLongitude()), radius);
         geoQuery.removeAllListeners();
 
         geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
             @Override
             public void onKeyEntered(String key, final GeoLocation location) {
-                FirebaseDatabase.getInstance().getReference("Users")
-                        .orderByChild("l")
+                FirebaseDatabase.getInstance().getReference("Users").orderByChild("I")
                         .addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                User user = dataSnapshot.getValue(User.class);
-                                mMap.addMarker(new MarkerOptions()
-                                        .position(new LatLng(location.latitude,location.longitude))
-                                        .flat(true)
-                                        .title(user.getName())
-                                        .icon(BitmapDescriptorFactory.defaultMarker()));
+                                for(DataSnapshot posSnapShot:dataSnapshot.getChildren()) {
+                                    User user = dataSnapshot.getValue(User.class);
+                                    Uid = user.getUid();
+                                    if (Uid != userId) {
+                                        useruid = FirebaseDatabase.getInstance().getReference("Users").child(Uid);
+                                        LatLng userlocation = new LatLng(Double.parseDouble(String.valueOf(useruid.child("lat"))), Double.parseDouble(String.valueOf(useruid.child("lng"))));
+                                        //mMap.clear();
+                                        mMap.addMarker(new MarkerOptions()
+                                                .position(userlocation)   //new LatLng(location.latitude,location.longitude)
+                                                .flat(true)
+                                                .title(user.getName())
+                                                .icon(BitmapDescriptorFactory.defaultMarker()));
+                                    }
+                                    else{
+                                        return;
+                                    }
+                                }
                             }
-
                             @Override
                             public void onCancelled(DatabaseError databaseError) {
 
                             }
                         });
-
             }
 
             @Override
