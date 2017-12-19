@@ -181,24 +181,25 @@ public class MapsActivity extends FragmentActivity implements
         geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
             @Override
             public void onKeyEntered(String key, final GeoLocation location) {
-                FirebaseDatabase.getInstance().getReference("Users").orderByChild("I")
-                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                FirebaseDatabase.getInstance().getReference("Users")
+                        .addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                for(DataSnapshot posSnapShot:dataSnapshot.getChildren()) {
+                                for (DataSnapshot postsnot:dataSnapshot.getChildren()) {
                                     User user = dataSnapshot.getValue(User.class);
-                                    Uid = user.getUid();
-                                    if (Uid != userId) {
+                                    String Uid = postsnot.child("uid").getValue().toString();
+                                    if (!Uid.equals(userId)) {
                                         useruid = FirebaseDatabase.getInstance().getReference("Users").child(Uid);
-                                        LatLng userlocation = new LatLng(Double.parseDouble(String.valueOf(useruid.child("lat"))), Double.parseDouble(String.valueOf(useruid.child("lng"))));
-                                        //mMap.clear();
+                                        LatLng userlocation = new LatLng(Double.parseDouble(postsnot.child("lat").getValue().toString()), Double.parseDouble(postsnot.child("lng").getValue().toString()));    //Double.parseDouble(String.valueOf(useruid.child("lat"))), Double.parseDouble(String.valueOf(useruid.child("lng")))
+                                        mMap.clear();
                                         mMap.addMarker(new MarkerOptions()
                                                 .position(userlocation)   //new LatLng(location.latitude,location.longitude)
                                                 .flat(true)
                                                 .title(user.getName())
                                                 .icon(BitmapDescriptorFactory.defaultMarker()));
                                     }
-                                    else{
+                                    else
+                                    {
                                         return;
                                     }
                                 }
