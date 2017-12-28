@@ -19,8 +19,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -31,7 +29,6 @@ import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
 import com.firebase.geofire.GeoQuery;
 import com.firebase.geofire.GeoQueryEventListener;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -182,12 +179,13 @@ public class MapsActivity extends FragmentActivity implements
             @Override
             public void onKeyEntered(String key, final GeoLocation location) {
                 FirebaseDatabase.getInstance().getReference("Users")
-                        .addValueEventListener(new ValueEventListener() {
+                        .addListenerForSingleValueEvent(new ValueEventListener() { //addValueEventListener
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
+                                User user = dataSnapshot.getValue(User.class);
                                 for (DataSnapshot postsnot:dataSnapshot.getChildren()) {
-                                    User user = dataSnapshot.getValue(User.class);
                                     String Uid = postsnot.child("uid").getValue().toString();
+                                    String username = postsnot.child("name").getValue().toString();
                                     if (!Uid.equals(userId)) {
                                         useruid = FirebaseDatabase.getInstance().getReference("Users").child(Uid);
                                         LatLng userlocation = new LatLng(Double.parseDouble(postsnot.child("lat").getValue().toString()), Double.parseDouble(postsnot.child("lng").getValue().toString()));    //Double.parseDouble(String.valueOf(useruid.child("lat"))), Double.parseDouble(String.valueOf(useruid.child("lng")))
@@ -195,7 +193,7 @@ public class MapsActivity extends FragmentActivity implements
                                         mMap.addMarker(new MarkerOptions()
                                                 .position(userlocation)   //new LatLng(location.latitude,location.longitude)
                                                 .flat(true)
-                                                .title(user.getName())
+                                                .title(username)
                                                 .icon(BitmapDescriptorFactory.defaultMarker()));
                                     }
                                     else
@@ -313,6 +311,7 @@ public class MapsActivity extends FragmentActivity implements
         });
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.setOnMyLocationButtonClickListener(this);
+        mMap.setInfoWindowAdapter(new UserinfoWindow(this));
         ButtonClicker();
     }
 
